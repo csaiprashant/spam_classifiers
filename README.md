@@ -7,10 +7,10 @@ The table shown below lists the different classifier - feature combinations used
 | Model | Base Classifier | Features | AUC Score |
 |---|---|---|---|
 | 1 | Multinomial Naive Bayes (alpha=0.1) | Count Vectorizer (default params)  | 0.972 |
-| 2 | Multinomial Naive Bayes (alpha=0.1) | Tfidf Vectorizer (min_df=3)  | 0.942 |
-| 3 | Support Vector Machine (C=10000) | Tfidf Vectorizer (min_df=5) + length of text  | 0.958 |
-| 4 | Logistic Regression (C=100) | Tfidf Vectorizer (min_df=5, ngram_range=[1, 3]) + length of text + number of digits per document | 0.968 |
-| 5 | Logistic Regression (C=100) | Tfidf Vectorizer (min_df=5, ngram_range=[2, 5]) + length of text + number of digits per document + number of non-word characters | 0.979 |
+| 2 | Multinomial Naive Bayes (alpha=0.1) | TF-IDF Vectorizer (min_df=3)  | 0.942 |
+| 3 | Support Vector Machine (C=10000) | TF-IDF Vectorizer (min_df=5) + length of text  | 0.958 |
+| 4 | Logistic Regression (C=100) | TF-IDF Vectorizer (min_df=5, ngram_range=[1, 3]) + length of text + number of digits per document | 0.968 |
+| 5 | Logistic Regression (C=100) | TF-IDF Vectorizer (min_df=5, ngram_range=[2, 5]) + length of text + number of digits per document + number of non-word characters | 0.979 |
 
 Legend:
 * alpha - smoothing parameter
